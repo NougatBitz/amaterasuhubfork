@@ -1,0 +1,9 @@
+local frame = script.Parent -- path to the frame
+		local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+		
+		mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() -- i do this in all my key events, though i don't remember why
+		if key == 'f' then -- if key pressed is h
+		frame.Visible = not frame.Visible -- flip between visible/invisible
+		end
+		end)
