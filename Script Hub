@@ -1,0 +1,7 @@
+if game.PlaceId == 4588604953 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tubris/Tubs/main/Amaterasu%20Hub%20Criminality%20Free"))()
+end
+
+if game.PlaceId ~= 4787629450 then
+    game.StarterGui:SetCore("SendNotification", {Title = "Amaterasu Hub", Text = "This game isnt suported by the script hub", Icon = window.Icons.notification , Duration = 3})
+end
