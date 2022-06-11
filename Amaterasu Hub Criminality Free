@@ -1,5 +1,8 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/UI/main/LiteUI.lua"))()
 
+-- local customIcon_id = 7618136617
+-- library.Icon = "rbxassetid://" .. tostring(customIcon_id)
+
 library.LeftBar_MinSize = 45
 library.Name = 'Amaterasu Hub'
 library.Version = "Free"
@@ -54,7 +57,6 @@ section1:addLabel({
     text = '<font color="#' .. library.Settings.theme.Accent:ToHex() .. '"><b>Player Settings</b></font>',
     textsize = nil, -- auto
     textxalignment = Enum.TextXAlignment.Center,
-    textyalignment = Enum.TextYAlignment.Center,
 })
 
 section1:addSlider({
@@ -223,7 +225,6 @@ section1:addLabel({
          text = '<font color="#' .. library.Settings.theme.Accent:ToHex() .. '"><b>Visual</b></font>',
          textsize = nil, -- auto
          textxalignment = Enum.TextXAlignment.Center,
-         textyalignment = Enum.TextYAlignment.Center,
 })
 
 section1:addToggle({
@@ -339,7 +340,6 @@ section1:addLabel({
     text = '<font color="#' .. library.Settings.theme.Accent:ToHex() .. '"><b>Combat</b></font>',
     textsize = nil, -- auto
     textxalignment = Enum.TextXAlignment.Center,
-    textyalignment = Enum.TextYAlignment.Center,
 })
 
 section1:addToggle({
@@ -453,7 +453,6 @@ section1:addLabel({
          text = '<font color="#' .. library.Settings.theme.Accent:ToHex() .. '"><b>Misc</b></font>',
          textsize = nil, -- auto
          textxalignment = Enum.TextXAlignment.Center,
-         textyalignment = Enum.TextYAlignment.Center,
 })
 section1:addToggle({
     Section = 1,
@@ -505,7 +504,6 @@ section1:addLabel({
     text = '<font color="#' .. library.Settings.theme.Accent:ToHex() .. '"><b>TELEPORT</b></font>',
     textsize = nil, -- auto
     textxalignment = Enum.TextXAlignment.Center,
-    textyalignment = Enum.TextYAlignment.Center,
 })
 
 
