@@ -1,0 +1,9 @@
+for i,v in pairs(game.Workspace.ExampleFolder:GetChildren()) do
+        if v:FindFirstChild("HumanoidRootPart") then
+local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v:FindFirstChild("HumanoidRootPart").Position).magnitude
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new((distance/NumberOfSpeedHere), Enum.EasingStyle.Linear)
+
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(v:FindFirstChild("HumanoidRootPart").Position, (v.HumanoidRootPart.Position))})
+        tween:Play()
+end
+end
